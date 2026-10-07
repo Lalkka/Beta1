@@ -33,6 +33,7 @@ namespace Beta1
 
                 //Строка состояния героя
                 Console.WriteLine($"♡{HP}/{MaxHP}\n✧{Point}");
+
                 //Нахождение поинтов
                 if (PosX == PosPointX0 && PosY == PosPointY0)
                 {
