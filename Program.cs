@@ -36,6 +36,13 @@ namespace Beta1
                 //Строка состояния героя
                 Console.WriteLine($"♡{HP}/{MaxHP}\n✧{Point}");
 
+                //Мишура
+                Console.SetCursorPosition(0, 7);
+                Console.Write("                                        ");
+                Console.SetCursorPosition(0, 8);
+                Console.Write("                                        ");
+                Console.SetCursorPosition(0, 7);
+
                 //Нахождение поинтов
                 if (PosX == PosPointX0 && PosY == PosPointY0)
                 {
@@ -117,7 +124,7 @@ namespace Beta1
                     Console.SetCursorPosition(0, 5);
                 }
             }
-            
+
         }
     }
 }
