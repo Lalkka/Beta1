@@ -10,11 +10,13 @@ namespace Beta1
             Console.OutputEncoding = Encoding.Unicode;
 
             int HP = 100, MaxHP = 100, Point = 0,
-                Damage = 10, PosMineX = 3, PosMineY = 1,
+                Damage = 50, PosMineX = 3, PosMineY = 4,
                 PosPointX0 = 0, PosPointY0 = 4,
                 PosPointX1 = 3, PosPointY1 = 1,
                 PosX = 2, PosY = 2;
-            Console.WriteLine("Найдите 5 кристалов");
+            Console.WriteLine("Найдите 5 кристалов\nУправление W,A,S,D");
+            Console.ReadLine();
+            Console.Clear();
             Console.WriteLine("#####");
             Console.WriteLine("#####");
             Console.WriteLine("#####");
@@ -68,7 +70,6 @@ namespace Beta1
                     Environment.Exit(0);
                 }
                 //Передвижение персонажа
-                Console.WriteLine("Введите направление движения (W, A, S, D):");
                 var key = Console.ReadKey();
                 if (key.Key == ConsoleKey.D)
                 {
@@ -116,6 +117,7 @@ namespace Beta1
                     Console.SetCursorPosition(0, 5);
                 }
             }
+            
         }
     }
 }
